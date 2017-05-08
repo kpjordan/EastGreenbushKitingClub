@@ -1,0 +1,38 @@
+﻿@model Post
+
+<form method="Post" asp-antiforgery="true">
+    <div>
+        <label asp-for="Title"></label>
+        <br />
+        <input asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+    </div>
+
+    <div>
+        <label asp-for="Date"></label>
+        <br />
+        <input type="date" asp-for="Date" />
+        <span asp-validation-for="Date"></span>
+    </div>
+    <div>
+        <label asp-for="MemberId"></label>
+        <br />
+        <select asp-for="MemberId">
+            @foreach(var member in ViewBag.MemberList)
+            { 
+               <option value="@member.Id">@member.Name</option>
+            }
+        </select>
+        <span asp-validation-for="MemberId"></span>
+    </div>
+    <div>
+        <label asp-for="Content"></label>
+        <br />
+        <textarea asp-for="Content" cols="60" rows="10"></textarea>
+        <span asp-validation-for="Content"></span>
+    </div>
+    <div>
+        <input class="btn btn-primary" type="submit" value="Save Post" />
+    </div>
+
+</form>

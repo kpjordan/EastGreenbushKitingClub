@@ -1,0 +1,19 @@
+{
+  "name": "EastGreenbushKitingClub",
+  "authors": [
+    "Kathleen Jordan <kathleen.jordan.art@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "wwwroot/bower_components"
+  ],
+  "dependencies": {}
+}

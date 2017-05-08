@@ -1,0 +1,43 @@
+﻿@model MemberIndexViewModel
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Members</h1>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a class="btn btn-primary" asp-action="Create">Create a new member</a>
+                <br />
+                <br />
+                <br />
+            }
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="index-item-list">
+
+                @foreach (var member in Model.MembersPreview)
+            {
+                    <div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">@member.Name</h3>
+                            </div>
+                            <div class="panel-body">
+                              @member.DateJoined
+                                <br />
+                                <a class="btn btn-primary" asp-action="Details" asp-route-id="@member.Id">View member details</a>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

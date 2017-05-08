@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/stylesheets/Main.css" />
+    <script src="~/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="~/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsed-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" asp-action="Index" asp-controller="Home">EGKC</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="collapsed-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a asp-action="Index" asp-controller="Post">Posts</a></li>
+                    <li><a asp-action="Index" asp-controller="Event">Events</a></li>
+                    <li><a asp-action="Index" asp-controller="Member">Members</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-xs-6"></div>
+            <div class="col-sm-3 col-xs-6">    
+                    @await Component.InvokeAsync("LoginLogout")
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                @RenderBody()
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        EGKC 2017
+    </footer>
+</body>
+</html>

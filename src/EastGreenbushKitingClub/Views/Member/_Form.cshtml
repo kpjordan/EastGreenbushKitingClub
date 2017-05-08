@@ -1,0 +1,64 @@
+﻿@model Member
+<form method="Post" asp-antiforgery="true">
+
+
+    <div>
+        <label asp-for="FirstName"></label>
+        <br />
+        <input asp-for="FirstName" />
+        <span asp-validation-for="FirstName"></span>
+    </div>
+    <div>
+        <label asp-for="LastName"></label>
+        <br />
+        <input asp-for="LastName" />
+        <span asp-validation-for="LastName"></span>
+    </div>
+    <div>
+        <label asp-for="StreetAddress"></label>
+        <br />
+        <input asp-for="StreetAddress" />
+        <span asp-validation-for="StreetAddress"></span>
+    </div>
+    <div>
+        <label asp-for="StreetAddress2"></label>
+        <br />
+        <input asp-for="StreetAddress2" />
+        <span asp-validation-for="StreetAddress2"></span>
+    </div>
+    <div>
+        <label asp-for="City"></label>
+        <br />
+        <input asp-for="City" />
+        <span asp-validation-for="City"></span>
+    </div>
+    <div>
+        <label asp-for="State"></label>
+        <br />
+        <input asp-for="State" />
+        <span asp-validation-for="State"></span>
+    </div>
+    <div>
+        <label asp-for="ZipCode"></label>
+        <br />
+        <input asp-for="ZipCode" />
+        <span asp-validation-for="ZipCode"></span>
+    </div>
+    <div>
+        <label asp-for="Telephone"></label>
+        <br />
+        <input asp-for="Telephone" />
+        <span asp-validation-for="Telephone"></span>
+    </div>
+    <div>
+        <label asp-for="DateJoined"></label>
+        <br />
+        <input asp-for="DateJoined" />
+        <span asp-validation-for="DateJoined"></span>
+
+    </div>
+    <br />
+    <div>
+        <input class="btn btn-primary" type="submit" value="Save Member" />
+    </div>
+</form>

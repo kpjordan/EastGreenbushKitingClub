@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E571C610-2116-4263-AF3A-6945DF53EBE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1983003C-C3AE-4970-8E02-21C8A77B2DEA}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EastGreenbushKitingClub", "src\EastGreenbushKitingClub\EastGreenbushKitingClub.xproj", "{3DFB841B-D35D-4F60-89FE-01BC2C156F69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DFB841B-D35D-4F60-89FE-01BC2C156F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DFB841B-D35D-4F60-89FE-01BC2C156F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DFB841B-D35D-4F60-89FE-01BC2C156F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DFB841B-D35D-4F60-89FE-01BC2C156F69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3DFB841B-D35D-4F60-89FE-01BC2C156F69} = {E571C610-2116-4263-AF3A-6945DF53EBE6}
+	EndGlobalSection
+EndGlobal
